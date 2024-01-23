@@ -1,0 +1,190 @@
+Query 1 : 
+    {
+        "search": "AI",
+        "select": "title,instructor,entities"
+    }
+
+Results 1 : 
+    {
+        "@odata.context": "https://ai-enriched-corporate-training-catalog-search.search.windows.net/indexes('azuretable-index')/$metadata#docs(*)",
+        "value": [
+            {
+            "@search.score": 6.9089727,
+            "instructor": null,
+            "title": "Get started with AI Builder Text recognition",
+            "entities": null
+            },
+            {
+            "@search.score": 5.424355,
+            "instructor": null,
+            "title": "Enable business users with key AI use cases",
+            "entities": null
+            },
+            {
+            "@search.score": 5.09836,
+            "instructor": "Eileen Diaz",
+            "title": "Ethics in AI",
+            "entities": "[{\"name\":\"Eileen Diaz\",\"description\":\"Eileen is our Senior Security Engineer responsible for application and service security. She has been with the company for 9 years and enjoys writing Sci-Fi in her spare time.\",\"id\":\"\",\"type\":\"\",\"subtype\":\"\",\"matches\":[{\"text\":\"eileen diaz\",\"offset\":0,\"length\":11,\"matchDistance\":0.0}]}]"
+            },
+            {
+            "@search.score": 4.261454,
+            "instructor": null,
+            "title": "Define an AI strategy to create business value",
+            "entities": null
+            },
+            {
+            "@search.score": 1.8471386,
+            "instructor": null,
+            "title": "Use containers for your Language Understanding Intelligent Service (LUIS) Apps",
+            "entities": null
+            }
+        ]
+    }
+
+
+Query 2 : 
+    {
+        "search": "AI",
+        "select": "metadata_title,metadata_author,publicationName,publisher,publicationDate"
+    }
+
+Results 2 : 
+    {
+        "@odata.context": "https://ai-enriched-corporate-training-catalog-search.search.windows.net/indexes('azureblob-index')/$metadata#docs(*)",
+        "value": [
+            {
+            "@search.score": 2.9396675,
+            "metadata_author": "Alina Köchling ",
+            "metadata_title": "Discriminated by an algorithm: a systematic review of discrimination and fairness by algorithmic decision-making in the context of HR recruitment and HR development",
+            "publicationName": "Business Research",
+            "publisher": "Springer",
+            "publicationDate": "2020-11-01"
+            },
+            {
+            "@search.score": 2.2315629,
+            "metadata_author": "Partheeban Chandrasekaran",
+            "metadata_title": "Toward a testbed for evaluating computational trust models: experiments and analysis",
+            "publicationName": "Journal of Trust Management",
+            "publisher": "Springer",
+            "publicationDate": "2015-09-07"
+            },
+            {
+            "@search.score": 1.524675,
+            "metadata_author": "Haoliang Cui",
+            "metadata_title": "A classification method for social information of sellers on social network",
+            "publicationName": "EURASIP Journal on Image and Video Processing",
+            "publisher": "Springer",
+            "publicationDate": "2021-01-14"
+            },
+            {
+            "@search.score": 1.3259062,
+            "metadata_author": "Tuba Parlar ",
+            "metadata_title": "QER: a new feature selection method for sentiment analysis",
+            "publicationName": "Human-centric Computing and Information Sciences",
+            "publisher": "Springer",
+            "publicationDate": "2018-05-09"
+            }
+        ]
+    }
+
+Query 3 : 
+    {
+        "search": "AI",
+        "select": "metadata_title,metadata_author,doi"
+    }
+
+Results 3 : 
+    {
+        "@odata.context": "https://ai-enriched-corporate-training-catalog-search.search.windows.net/indexes('azureblob-index')/$metadata#docs(*)",
+        "value": [
+            {
+            "@search.score": 2.9396675,
+            "metadata_author": "Alina Köchling ",
+            "metadata_title": "Discriminated by an algorithm: a systematic review of discrimination and fairness by algorithmic decision-making in the context of HR recruitment and HR development",
+            "doi": "10.1007/s40685-020-00134-w"
+            },
+            {
+            "@search.score": 2.2315629,
+            "metadata_author": "Partheeban Chandrasekaran",
+            "metadata_title": "Toward a testbed for evaluating computational trust models: experiments and analysis",
+            "doi": "10.1186/s40493-015-0019-z"
+            },
+            {
+            "@search.score": 1.524675,
+            "metadata_author": "Haoliang Cui",
+            "metadata_title": "A classification method for social information of sellers on social network",
+            "doi": "10.1186/s13640-020-00545-z"
+            },
+            {
+            "@search.score": 1.3259062,
+            "metadata_author": "Tuba Parlar ",
+            "metadata_title": "QER: a new feature selection method for sentiment analysis",
+            "doi": "10.1186/s13673-018-0135-8"
+            }
+        ]
+    }
+
+Query 4 : 
+    {
+        "search": "AI",
+        "select": "metadata_title,metadata_author,publicationName,publisher,doi,publicationDate",
+        "filter": "publicationDate gt '2015-01-01' and publicationDate lt '2020-12-31'"
+    }
+
+Results 4 : 
+    {
+        "@odata.context": "https://ai-enriched-corporate-training-catalog-search.search.windows.net/indexes('azureblob-index')/$metadata#docs(*)",
+        "value": [
+            {
+            "@search.score": 2.9396675,
+            "metadata_author": "Alina Köchling ",
+            "metadata_title": "Discriminated by an algorithm: a systematic review of discrimination and fairness by algorithmic decision-making in the context of HR recruitment and HR development",
+            "publicationName": "Business Research",
+            "publisher": "Springer",
+            "doi": "10.1007/s40685-020-00134-w",
+            "publicationDate": "2020-11-01"
+            },
+            {
+            "@search.score": 2.2315629,
+            "metadata_author": "Partheeban Chandrasekaran",
+            "metadata_title": "Toward a testbed for evaluating computational trust models: experiments and analysis",
+            "publicationName": "Journal of Trust Management",
+            "publisher": "Springer",
+            "doi": "10.1186/s40493-015-0019-z",
+            "publicationDate": "2015-09-07"
+            },
+            {
+            "@search.score": 1.3259062,
+            "metadata_author": "Tuba Parlar ",
+            "metadata_title": "QER: a new feature selection method for sentiment analysis",
+            "publicationName": "Human-centric Computing and Information Sciences",
+            "publisher": "Springer",
+            "doi": "10.1186/s13673-018-0135-8",
+            "publicationDate": "2018-05-09"
+            }
+        ]
+    }
+
+
+Query 5 : 
+    {
+        "search": "AI",
+        "select": "metadata_title,metadata_author,publicationName,publisher,doi,publicationDate",
+        "filter": "search.ismatch('human', 'publicationName')"
+    }
+
+Results 5 : 
+    {
+        "@odata.context": "https://ai-enriched-corporate-training-catalog-search.search.windows.net/indexes('azureblob-index')/$metadata#docs(*)",
+        "value": [
+            {
+            "@search.score": 1.3259062,
+            "metadata_author": "Tuba Parlar ",
+            "metadata_title": "QER: a new feature selection method for sentiment analysis",
+            "publicationName": "Human-centric Computing and Information Sciences",
+            "publisher": "Springer",
+            "doi": "10.1186/s13673-018-0135-8",
+            "publicationDate": "2018-05-09"
+            }
+        ]
+    }
