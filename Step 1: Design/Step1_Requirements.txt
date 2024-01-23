@@ -1,0 +1,19 @@
+# Search for Courses:
+- Users can search Course Data by keywords and phrases from descriptions and other fields. 
+- Users can filter results based on relevant criteria such as course ratings or duration. 
+- Users can search course instuctors profiles, even if they are not currently in the database.
+- Users can facet information based on source (MS, Udacity, Internal), skills, and role.
+- Users can sort results by relevant fields.
+
+# Search for Journal Articles:
+- Users can search for journal articles by keywords and phrases, authors, associated institutions, publication name, publisher, and publication date.
+- Users can be provided the DOI(Digital Object Identifier) URL for the PDF as part of the search result.
+
+
+# Needed skills
+# Search for Courses:
+- Key Phrase Extraction
+- Custom Entity Lookup
+# Search for Journal Articles:
+- Key Phrase Extraction
+- Custom Skill

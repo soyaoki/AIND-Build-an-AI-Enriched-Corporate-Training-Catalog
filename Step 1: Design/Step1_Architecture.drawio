@@ -1,0 +1,76 @@
+<mxfile host="65bd71144e">
+    <diagram id="opPc970GUqyMJmJhnnYP" name="Page-1">
+        <mxGraphModel dx="1141" dy="1727" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="21" value="&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;Azure Cognitive Search&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=top;" vertex="1" parent="1">
+                    <mxGeometry x="330" y="80" width="440" height="360" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;QUERY &lt;br&gt;RESPONSES&lt;/span&gt;" style="edgeStyle=none;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;fontColor=#000000;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="21" target="22">
+                    <mxGeometry y="-20" relative="1" as="geometry">
+                        <mxPoint x="840" y="350" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" value="&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;DATA SOURCES&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=top;" vertex="1" parent="1">
+                    <mxGeometry x="59" y="80" width="150" height="360" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="AI ENRICHMENT&amp;nbsp;&lt;br&gt;FULL INDEXING" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="19" target="21">
+                    <mxGeometry x="0.0083" y="20" relative="1" as="geometry">
+                        <mxPoint x="320" y="204.14285714285734" as="targetPoint"/>
+                        <mxPoint x="220" y="240" as="sourcePoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="37" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;QUERY &lt;br&gt;REQUESTS&lt;/span&gt;" style="edgeStyle=none;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="22" target="21">
+                    <mxGeometry y="-20" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" value="&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;CONSUMING APPLICATION&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=top;" vertex="1" parent="1">
+                    <mxGeometry x="890" y="80" width="150" height="360" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" style="shape=mxgraph.signs.healthcare.brain;html=1;pointerEvents=1;fillColor=#1ba1e2;strokeColor=#006EAF;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontColor=#ffffff;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="410" y="100" width="46.12" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="30" target="32">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="&lt;span style=&quot;background-color: initial;&quot;&gt;INDEXING ENGINE&lt;br&gt;&lt;br&gt;　　　　SKILLS&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#1BA1E2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="210" width="100" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="&lt;span style=&quot;background-color: initial;&quot;&gt;INDEXES&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#1BA1E2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+                    <mxGeometry x="500" y="210" width="100" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="33" target="32">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="&lt;span style=&quot;background-color: initial;&quot;&gt;QUERY&lt;br&gt;ENGINE&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#1BA1E2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+                    <mxGeometry x="640" y="210" width="100" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="&lt;font style=&quot;background-color: rgb(255, 255, 255);&quot; color=&quot;#000000&quot;&gt;Azure Static Web App&lt;/font&gt;" style="sketch=0;aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/CustomDomain.svg;labelBackgroundColor=#F0F0F0;" vertex="1" parent="1">
+                    <mxGeometry x="940" y="234" width="50" height="42" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.settings;fontSize=7;fontColor=#000000;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="272" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Instructor&amp;nbsp;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Profiles&lt;/span&gt;&lt;/font&gt;" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.json;labelBackgroundColor=#FFFFFF;fontSize=7;fontColor=#000000;fillColor=none;aspect=fixed;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="104.50000000000003" y="230" width="55.41" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="&lt;span style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;Curated Library&lt;/span&gt;" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.adobe_pdf;fillColor=#A60908;labelBackgroundColor=none;fontSize=7;fontColor=#000000;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="108.58" y="348" width="51.33" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="73" value="&lt;span style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;Course Data&lt;/span&gt;" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.users.csv_file;labelBackgroundColor=none;fontSize=7;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="104.5" y="140" width="59" height="43" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" value="" style="endArrow=none;dashed=1;html=1;labelBackgroundColor=#FFFFFF;fontSize=12;fontColor=#000000;strokeWidth=2;startSize=0;endSize=0;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="366" y="266" as="sourcePoint"/>
+                        <mxPoint x="461" y="266" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
