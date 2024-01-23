@@ -1,0 +1,33 @@
+{
+  "@odata.context": "https://ai-enriched-corporate-training-catalog-search.search.windows.net/$metadata#skillsets/$entity",
+  "@odata.etag": "\"0x8DC1BD54B8B13AD\"",
+  "name": "azureblob-skillset",
+  "description": "Skillset created from the portal. skillsetName: azureblob-skillset; contentField: metadata_title; enrichmentGranularity: document; knowledgeStoreStorageAccount: ;",
+  "skills": [
+    {
+      "@odata.type": "#Microsoft.Skills.Text.KeyPhraseExtractionSkill",
+      "name": "#1",
+      "description": null,
+      "context": "/document/metadata_title",
+      "defaultLanguageCode": "en",
+      "maxKeyPhraseCount": null,
+      "modelVersion": null,
+      "inputs": [
+        {
+          "name": "text",
+          "source": "/document/metadata_title"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "keyPhrases",
+          "targetName": "keyphrases"
+        }
+      ]
+    }
+  ],
+  "cognitiveServices": null,
+  "knowledgeStore": null,
+  "indexProjections": null,
+  "encryptionKey": null
+}

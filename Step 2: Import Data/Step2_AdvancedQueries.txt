@@ -1,0 +1,226 @@
+Query 1 : 
+    {
+        "search": "AI",
+        "select": "rating_average,title",
+        "filter": "rating_average gt 4.0"
+    }
+
+Results 1 :
+    {
+        "@odata.context": "https://ai-enriched-corporate-training-catalog-search.search.windows.net/indexes('azuretable-index')/$metadata#docs(*)",
+        "value": [
+            {
+            "@search.score": 6.9089727,
+            "rating_average": 4.61,
+            "title": "Get started with AI Builder Text recognition"
+            },
+            {
+            "@search.score": 5.424355,
+            "rating_average": 4.75,
+            "title": "Enable business users with key AI use cases"
+            },
+            {
+            "@search.score": 5.09836,
+            "rating_average": 4.3,
+            "title": "Ethics in AI"
+            },
+            {
+            "@search.score": 4.261454,
+            "rating_average": 4.71,
+            "title": "Define an AI strategy to create business value"
+            },
+            {
+            "@search.score": 1.8471386,
+            "rating_average": 4.75,
+            "title": "Use containers for your Language Understanding Intelligent Service (LUIS) Apps"
+            }
+        ]
+    }
+
+Query 2 : 
+    {
+        "search": "AI",
+        "select": "duration,title",
+        "filter": "duration lt 20"
+    }
+
+Results 2 :
+    {
+        "@odata.context": "https://ai-enriched-corporate-training-catalog-search.search.windows.net/indexes('azuretable-index')/$metadata#docs(*)",
+        "value": [
+            {
+            "@search.score": 5.09836,
+            "duration": 1,
+            "title": "Ethics in AI"
+            },
+            {
+            "@search.score": 1.8471386,
+            "duration": 18,
+            "title": "Use containers for your Language Understanding Intelligent Service (LUIS) Apps"
+            }
+        ]
+    }
+
+Query 3 : 
+    {
+        "search": "AI",
+        "select": "title,level",
+        "facets": ["level"]
+    }
+
+Results 3 :
+    {
+        "@odata.context": "https://ai-enriched-corporate-training-catalog-search.search.windows.net/indexes('azuretable-index')/$metadata#docs(*)",
+        "@search.facets": {
+            "level": [
+            {
+                "count": 2,
+                "value": "beginner"
+            },
+            {
+                "count": 2,
+                "value": "intermediate"
+            },
+            {
+                "count": 1,
+                "value": "advanced"
+            }
+            ]
+        },
+        "value": [
+            {
+            "@search.score": 6.9089727,
+            "level": "beginner",
+            "title": "Get started with AI Builder Text recognition"
+            },
+            {
+            "@search.score": 5.424355,
+            "level": "beginner",
+            "title": "Enable business users with key AI use cases"
+            },
+            {
+            "@search.score": 5.09836,
+            "level": "intermediate",
+            "title": "Ethics in AI"
+            },
+            {
+            "@search.score": 4.261454,
+            "level": "intermediate",
+            "title": "Define an AI strategy to create business value"
+            },
+            {
+            "@search.score": 1.8471386,
+            "level": "advanced",
+            "title": "Use containers for your Language Understanding Intelligent Service (LUIS) Apps"
+            }
+        ]
+    }
+
+Query 4 : 
+    {
+        "search": "AI",
+        "select": "title,role",
+        "facets": ["role"]
+    }
+
+Results 4 : 
+    {
+        "@odata.context": "https://ai-enriched-corporate-training-catalog-search.search.windows.net/indexes('azuretable-index')/$metadata#docs(*)",
+        "@search.facets": {
+            "role": [
+            {
+                "count": 2,
+                "value": "business-user"
+            },
+            {
+                "count": 1,
+                "value": "ai-engineer"
+            },
+            {
+                "count": 1,
+                "value": "architect"
+            },
+            {
+                "count": 1,
+                "value": "functional-consultant"
+            }
+            ]
+        },
+        "value": [
+            {
+            "@search.score": 6.9089727,
+            "role": "business-user",
+            "title": "Get started with AI Builder Text recognition"
+            },
+            {
+            "@search.score": 5.424355,
+            "role": "functional-consultant",
+            "title": "Enable business users with key AI use cases"
+            },
+            {
+            "@search.score": 5.09836,
+            "role": "architect",
+            "title": "Ethics in AI"
+            },
+            {
+            "@search.score": 4.261454,
+            "role": "business-user",
+            "title": "Define an AI strategy to create business value"
+            },
+            {
+            "@search.score": 1.8471386,
+            "role": "ai-engineer",
+            "title": "Use containers for your Language Understanding Intelligent Service (LUIS) Apps"
+            }
+        ]
+    }
+
+Query 5 : 
+    {
+        "search": "AI",
+        "select": "title,level,role,duration",
+        "orderby": "duration"
+    }
+
+Results 5 : 
+    {
+        "@odata.context": "https://ai-enriched-corporate-training-catalog-search.search.windows.net/indexes('azuretable-index')/$metadata#docs(*)",
+        "value": [
+            {
+            "@search.score": 5.09836,
+            "duration": 1,
+            "level": "intermediate",
+            "role": "architect",
+            "title": "Ethics in AI"
+            },
+            {
+            "@search.score": 1.8471386,
+            "duration": 18,
+            "level": "advanced",
+            "role": "ai-engineer",
+            "title": "Use containers for your Language Understanding Intelligent Service (LUIS) Apps"
+            },
+            {
+            "@search.score": 5.424355,
+            "duration": 34,
+            "level": "beginner",
+            "role": "functional-consultant",
+            "title": "Enable business users with key AI use cases"
+            },
+            {
+            "@search.score": 6.9089727,
+            "duration": 55,
+            "level": "beginner",
+            "role": "business-user",
+            "title": "Get started with AI Builder Text recognition"
+            },
+            {
+            "@search.score": 4.261454,
+            "duration": 70,
+            "level": "intermediate",
+            "role": "business-user",
+            "title": "Define an AI strategy to create business value"
+            }
+        ]
+    }
+
